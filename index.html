@@ -1,382 +1,178 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Mohamed Bakr</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Mohamed Bakr</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Mohamed Bakr</h1>
-        <p class="section__text__p2">Data Scientist</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/mohdbakr/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/Mohdbakr'"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years <br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="color-scheme" content="dark light">
+        <title>My Portfolio</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+        <link href="assets\css\styles.css" rel="stylesheet">
+        <link rel="icon" href="./assets/imgs/logo-cir.png">
+    </head>
+
+    <body class="systemDarkPreference" id="home">
+        <div class="container-fluid">
+        <!-- NAVIGATION -->
+        <section class="row row-mob">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top">
+                <div class="container-fluid">
+                    <!-- Brand -->
+                    <a class="navbar-brand" href="#home">
+                        <img src="./assets/imgs/logo-cir.png" alt="Mohamed Bakr" width="30" height="30" class="d-inline-block align-text-top me-2">
+                        Mohamed <span class="highlighted">Bakr</span>
+                    </a>
+                    <!-- Dark/Light mode icon -->
+                    <i id="mode-toggle" class="btn-toggle fas fa-sun icon"></i>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#experience">Experience</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects">Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
+            </nav>   
+        </section>
+        
+        <!-- Hero -->
+        <section class="row row-mob"></section>
+            <main class="set-defaults main" role="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 flex-column justify-content-center">
+                            <img src="./assets/imgs/Profile-pic.png" class="img-fluid" alt="Mohamed Bakr profile picture">
+                        </div>
+                        <div class="col-md-6 d-flex flex-column justify-content-center">
+                            <p class="pt-3">Hello, I'm</p>
+                            <h1 class="title">Mohamed Bakr</h1>
+                            <h2>Data Scientist</h2>
+
+                            <div class="btn-container row mx-n2">
+                                <div class="col-md px-2">
+                                    <a href="./assets/resume-example.pdf" class="btn btn-lg w-100 mb-3 set-defaults fw-500 btn-pri-local" target="_blank">Download CV</a>
+                                </div>
+                                <div class="col-md px-2">
+                                    <a href="./#contact" class="btn btn-sec-local btn-lg w-100 mb-3 set-defaults fw-500">Contact Info</a>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-center mt-3">
+                                <a href="https://www.linkedin.com/in/mohdbakr/" target="_blank" class="btn me-3">
+                                    <i class="fab fa-linkedin fa-2x"></i>
+                                </a>
+                                <a href="https://github.com/Mohdbakr" target="_blank" class="btn">
+                                    <i class="fab fa-github fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>SASS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>TypeScript</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Material UI</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+            </main>
+        </section>
+            
+
+        <!-- About -->
+        <section class="row row-mob" id="about">
+            <h1>About Me</h1>
+            <div class="col-md-6 flex-column justify-content-center">
+                <img src="./assets/imgs/about-pic.png" class="img-fluid about-pic" alt="Mohamed Bakr profile picture">
             </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend Development</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PostgreSQL</h3>
-                  <p>Basic</p>
+            <div class="col-md-6 flex-column justify-content-center">
+                <p class="pt-3">I am a highly skilled financial professional with over 20 years of experience in internal audit, financial planning & analysis, and risk management. I possess CIA and CFE certifications and have completed advanced training in risk management. My expertise in data science and analytics has enabled me to drive business insights and facilitate strategic decision-making. I am proficient in data analysis, machine learning, and data visualization, with a keen interest in uncovering hidden patterns and trends. I am currently pursuing a Master's in Information and Data Science from UC Berkeley to supplement my practical experience.</p>
+            </div>
+        </section>
+            
+
+        <!-- Experience -->
+        <section  class="row py-5 vh-100 text-center" id="experience">
+            <h1>Experience</h1>
+            <div class="col-lg-4">
+                <img src="./assets/imgs/Experience.png" class="img-fluid" alt="Experience">
+            </div>
+
+            <div class="col-lg-8">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga excepturi quisquam sit voluptatum similique illum, velit laborum nemo hic inventore suscipit minus in maiores eveniet nam repellat necessitatibus? Exercitationem error, cum provident fuga velit aspernatur autem molestias dolorum. In, maxime? Totam earum placeat exercitationem nam optio saepe iusto, quibusdam tempora soluta iste similique alias ratione! Laboriosam dolorum architecto rem dolorem libero laborum quibusdam deleniti quisquam quaerat, possimus at quas exercitationem mollitia asperiores, vitae eum voluptas dolor sequi obcaecati expedita sit! Dolorum labore, dolores repellendus accusantium tempore at expedita unde repudiandae cupiditate, similique sunt ipsum officia dicta quas quos asperiores.</p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section  class="row py-5 vh-100 text-center" id="projects">
+            <h1>Projects</h1>
+            <div class="col-lg-4">
+                <img src="./assets/imgs/Projects.png" class="img-fluid" alt="Projects">
+            </div>
+            <div class="col-lg-8">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae fuga excepturi quisquam sit voluptatum similique illum, velit laborum nemo hic inventore suscipit minus in maiores eveniet nam repellat necessitatibus? Exercitationem error, cum provident fuga velit aspernatur autem molestias dolorum. In, maxime? Totam earum placeat exercitationem nam optio saepe iusto, quibusdam tempora soluta iste similique alias ratione! Laboriosam dolorum architecto rem dolorem libero laborum quibusdam deleniti quisquam quaerat, possimus at quas exercitationem mollitia asperiores, vitae eum voluptas dolor sequi obcaecati expedita sit! Dolorum labore, dolores repellendus accusantium tempore at expedita unde repudiandae cupiditate, similique sunt ipsum officia dicta quas quos asperiores.</p>
+            </div>
+        </section>
+
+        <!-- Contacts -->
+        <section class="row py-5 vh-100" id="contact">
+            <div class="container">
+                <h1 class="text-center mb-4">Contact Me</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                        <form action="submit_form.php" method="POST">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Submit</button>
+                        </form>
+                    </div>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Express JS</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
             </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Two</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:m.bakr@yahoo.com">m.bakr@yahoo.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/mohdbakr/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Mohamed Bakr. All Rights Reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+        </section>
+        
+        <section class="row row-mob mt-5">
+            <footer class="d-flex flex-column col-md-12 pt-2">
+                <nav>
+                    <div class="nav-links-container">
+                        <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <ul class="list-unstyled list-inline text-center">
+                    <li class="list-inline-item"><a href="#" aria-label="cv/resume"><i class="fas fa-file-alt"></i></a></li>
+                    <li class="list-inline-item"><a href="#"><i class="fas fa-envelope" aria-label="email"></i></a></li>
+                    <li class="list-inline-item"><a href="https://github.com/Mohdbakr"><i class="fab fa-github" aria-label="github account"></i></a></li>
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/mohdbakr/"><i class="fab fa-linkedin" aria-label="LinkedIn Profile"></i></a></li>
+                  </ul>
+                <p class=" text-center">Mohamed Bakr &copy; <span id="year">2024</span>. All Rights Reserved.</p>
+            </footer>
+        </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets\js\script.js"></script>
   </body>
 </html>
