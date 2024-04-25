@@ -1,9 +1,15 @@
-$(document).ready(function () {
-    // Dark mode toggle
-    $('#dark-mode-icon').click(function () {
-        $('body').toggleClass('dark-mode');
-    });
+const modeToggleBtn = document.getElementById("mode-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
+modeToggleBtn.addEventListener("click", function () {
+    const hasSysDarkClass = document.body.classList.contains('systemDarkPreference');
+    const currentSysIsDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const isDark = (hasSysDarkClass && currentSysIsDark) || document.body.classList.contains('dark-mode');
+    document.body.classList.remove('systemDarkPreference')
+    document.body.classList.toggle('dark-mode', !isDark);
+});
+
+$(document).ready(function () {
     // Highlight navbar item on scroll
     $(window).scroll(function(){
         var scrollPos = $(window).scrollTop();
