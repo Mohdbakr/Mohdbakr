@@ -3,9 +3,7 @@
 
 /* variables */
 :root{
-  /* --header-height: 3rem; */
   /* Colors */
-  --hue-color:222 ;
   --c-body: #83848B;
   --c-accent: #F7F8F7;
   --c-accent-t:	rgba(247, 248, 247, .8);
@@ -45,15 +43,15 @@ a:hover {
   color: var(--c-brand);
 }
 
-/* img {
-  width: 100%;
-} */
-
 .section-padding {
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+.social ul {
+  list-style: none;
+  padding: none;
+}
 
 /* Navigation */
 .navbar {
@@ -170,11 +168,6 @@ footer li a {
   color: var(--c-accent-t);
 }
 
-footer ul {
-  list-style: none;
-  padding: none;
-}
-
 .footer-top {
   /* padding-bottom: 40px; */
   border-bottom: 1px solid rgba(255, 255, 255, .1);
@@ -189,6 +182,7 @@ footer h4{
   color: var(--c-accent);
 }
 
+/* theme button */
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -203,43 +197,23 @@ footer h4{
   }
 }
 
-.b-example-divider {
-  width: 100%;
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
-
-.b-example-vr {
-  flex-shrink: 0;
-  width: 1.5rem;
-  height: 100vh;
-}
-
 .bi {
   vertical-align: -.125em;
   fill: currentColor;
 }
 
-
-
 .btn-bd-primary {
-  --bd-violet-bg: #712cf9;
-  --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
-
   --bs-btn-font-weight: 600;
   --bs-btn-color: var(--bs-white);
-  --bs-btn-bg: var(--bd-violet-bg);
-  --bs-btn-border-color: var(--bd-violet-bg);
-  --bs-btn-hover-color: var(--bs-white);
-  --bs-btn-hover-bg: #6528e0;
-  --bs-btn-hover-border-color: #6528e0;
-  --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+  --bs-btn-bg: var(--c-brand);
+  --bs-btn-border-color: var(--c-brand);
+  --bs-btn-hover-color: var(--c-brand);
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: var(--c-brand);
+  --bs-btn-focus-shadow-rgb: var(--c-brand);
   --bs-btn-active-color: var(--bs-btn-hover-color);
-  --bs-btn-active-bg: #5a23c8;
-  --bs-btn-active-border-color: #5a23c8;
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
 }
 
 .bd-mode-toggle {
