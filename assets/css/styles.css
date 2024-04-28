@@ -4,38 +4,68 @@
 /* variables */
 :root{
   /* Colors */
-  --c-body: #83848B;
-  --c-accent: #F7F8F7;
-  --c-accent-t:	rgba(247, 248, 247, .8);
-  --c-brand: #8F8C97;
-  --c-brand-rgb: rgb(143, 140, 151);
-  --c-d-accent: #73717D;
-  --c-dark: #323743;
-  --c-dark-t: rgba(50, 55, 67, .8);
-  
+  --c-light: #FBF9F9; /* Light shades */
+  --c-light-rgb: 251, 249, 249; /* Light shades */
+  --c-accent: #687570; /* Light accent */
+  --c-accent-rgb:	104, 117, 112;
+  --c-main: #9BA8A0; /* main brand color */
+  --c-main-rgb: 155, 168, 160;
+  --c-d-accent: #708188;
+  --c-d-accent-rgb: 112, 129, 136;
+  --c-dark: #262F3B;
+  --c-dark-rgb: 38, 47, 59;
+
   --f-main: "Poppins", sans-serif;
   --transition: all .6s cubic-bezier(.165, .84, .44, 1);
   --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+html[data-bs-theme='light'] {
+  --background-color: var(--c-light);
+  --text-color: var(--c-dark);
+  --link-color: var(--c-d-accent);
+  --c-brand: var(--c-main);
+  --c-brand-rgb: var(--c-main-rgb);
+  --c-scroll: var(--c-d-accent);
+  --c-scroll-thumb: var(--c-dark);
+}
+
+html[data-bs-theme='dark'] {
+  --background-color: var(--c-dark);
+  --text-color: var(--c-light);
+  --link-color: var(--c-accent);
+  --c-brand: var(--c-main); /* main brand color */
+  --c-brand-rgb: var(--c-main-rgb);
+  --c-scroll: var(--c-light);
+  --c-scroll-thumb: var(--c-d-accent);
+}
 
 /* reset and helpers */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   min-height: 75rem;
   padding-top: 4.5rem;
   font-family: var(--f-main);
-  color: var(--c-body);
+  background-color: var(--background-color);
+  color: var(--text-color);
   line-height: 1.7;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h5, h5, .h5, h6, .h6{
   font-weight: 700;
-  color: var(--c-dark);
+  color: var(--c-d-accent);
+}
+
+ul {
+  list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: var(--c-dark);
+  color: var(--link-color);
   transition: var(--transition);
 }
 
@@ -63,19 +93,16 @@ a:hover {
 .navbar.scrolled {
   padding-top: 7px;
   padding-bottom: 7px;
-  background-color: var(--c-dark-t);
+  background-color: rgba(var(--c-dark-rgb), .8);
 }
 
-.navbar.scrolled .navbar-nav .nav-link {
-  color: white; 
-}
-
+.navbar.scrolled .navbar-nav .nav-link,
 .navbar.scrolled .navbar-brand {
-  color: white;
+  color: white; 
 }
 .navbar .navbar-nav .nav-link {
   font-weight: 500;
-  color: var(--c-dark);
+  color: var(--text-color);
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -86,7 +113,7 @@ a:hover {
 .navbar-brand {
   font-size: 24px;
   font-weight: 700;
-  color: var(--c-dark);
+  color: var(--text-color);
   transition: 0.3s ease;
 }
 
@@ -107,19 +134,6 @@ a:hover {
   border-radius: 3;
   border-width: 2px;
   font-weight: 500;
-}
-
-.btn-brand,
-.btn-brand:focus {
-  background-color: var(--c-brand);
-  color: white;
-  border-color: var(--c-brand);
-}
-
-.btn-brand:hover {
-  background-color: transparent;
-  color: var(--c-brand);
-  border-color: var(--c-brand);
 }
 
 /* Hero */
@@ -165,7 +179,7 @@ footer {
 footer p,
 footer li,
 footer li a {
-  color: var(--c-accent-t);
+  color: rgba(var(--c-accent-rgb), .8);
 }
 
 .footer-top {
@@ -222,4 +236,21 @@ footer h4{
 
 .bd-mode-toggle .dropdown-menu .active .bi {
   display: block !important;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: var(--c-scroll);
+  /* border-radius: .5rem; */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--c-scroll-thumb);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--c-accent);
+  border-radius: .5rem;
 }
