@@ -78,7 +78,7 @@
         })
     })
   })()
-  
+
 // Highlight navbar item on scroll and change navbar color
 $(document).ready(function () {
     // Highlight navbar item on scroll
@@ -102,4 +102,9 @@ $(document).ready(function () {
             $('.navbar').removeClass('scrolled');
         }
     });
+});
+
+  // AOS
+AOS.init({
+    duration: 750,
 });
