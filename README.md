@@ -55,7 +55,9 @@ Experienced data scientist with an internal audit, FP&A, and risk management bac
 ### 📊 Stats
 
 [![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=mohdbakr&theme=gruvbox)](https://git.io/streak-stats)
+
 ![Bakr's GitHub stats](https://github-readme-stats.vercel.app/api?username=mohdbakr&show_icons=true&theme=gruvbox)
+
 ![Bakr's GitHub Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=mohdbakr&show_icons=true&theme=gruvbox)
 
  
