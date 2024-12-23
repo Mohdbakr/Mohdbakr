@@ -70,10 +70,10 @@ Experienced data scientist with an internal audit, FP&A, and risk management bac
 <details>
  <summary> 📊 Stats</summary>
  
- <img width=390 src="https://github-readme-streak-stats.herokuapp.com?user=mohdbakr&theme=gruvbox" alt="streak stats" />
- <img width=390 src="https://github-readme-stats.vercel.app/api?username=mohdbakr&show_icons=true&theme=gruvbox" alt="Bakr's GitHub stats" />
+ <img width=390 src="https://github-readme-streak-stats.herokuapp.com?user=mohdbakr&theme=solarized-dark&border_radius=10" alt="streak stats" />
+ <img width=390 src="https://github-readme-stats.vercel.app/api?username=mohdbakr&show_icons=true&theme=solarized-dark&border_radius=10" alt="Bakr's GitHub stats" />
  
- ![Bakr's GitHub Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=mohdbakr&show_icons=true&theme=gruvbox)
+ <img width=325 src="https://github-readme-stats.vercel.app/api/top-langs?username=mohdbakr&hide=HTML&langs_count=8&layout=compact&theme=solarized-dark&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="Bakr's GitHub Top Languages"/>
 </details>
  
 
