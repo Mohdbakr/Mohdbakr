@@ -1,10 +1,28 @@
 [![MasterHead](https://www.omadahealth.com/hubfs/QuantifyingBehavior_Header_Animate_080818-1.gif)](https://portfolio.mohdbakr.com)
 
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=mohdbakr.mohdbakr"/>
 
 # Mohamed Bakr
 **`Data Scientist | CIA | CFE | Finance`**
 
 Experienced data scientist with an internal audit, FP&A, and risk management background. Certified Internal Auditor (CIA) and Fraud Examiner (CFE). Passionate about data-driven insights and strategic decision-making. I am pursuing a master’s in information and data science at UC Berkeley.
+
+ ### ***Follow me on:*** 
+
+<div align="center"> 
+  <a href="mailto:m.bakr@yahoo.com">
+    <img src="https://img.shields.io/badge/Yahoo!-6001D2?style=for-the-badge&logo=Yahoo!&logoColor=white&style=flat" />
+  </a>
+  <a href="https://linkedin.com/in/mohdbakr" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=fff&style=flat" target="_blank" />
+  </a>
+ <a href="https://github.com/bakr-ucb" target="_blank">
+  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=fff&style=flat" target="_blank" />
+ </a>
+  <a href="https://portfolio.mohdbakr.com" target="_blank">
+     <img src="https://img.shields.io/badge/website-000000?style=for-the-badge&logo=About.me&logoColor=fff&style=flat" target="_blank" />
+  </a>
+</div>
 
 <!--
  <p align="left">
@@ -16,28 +34,26 @@ Experienced data scientist with an internal audit, FP&A, and risk management bac
 -->
 ---
 
-### 🧰 Languages and Tools
+### ⚒️ Languages and Tools
 
-![Python Badge](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff&style=flat)
+<p align="left">
+  <a href="https://skillicons.dev#gh-light-mode-only">
+    <img src="https://skillicons.dev/icons?i=r,py,django,fastapi,postman,tensorflow,pytorch,anaconda,aws,raspberrypi,postgres,sqlite,redis,vscode,docker,powershell,bash,linux,md,html,css,js,bootstrap,git,github,gitlab," />
+  </a>
+</p>
+
+<p align="left">
+  <a href="https://skillicons.dev#gh-dark-mode-only">
+    <img src="https://skillicons.dev/icons?i=r,py,django,fastapi,postman,tensorflow,pytorch,anaconda,aws,raspberrypi,postgres,sqlite,redis,vscode,docker,powershell,bash,linux,md,html,css,js,bootstrap,git,github,gitlab&theme=light" />
+  </a>
+</p>
+
 ![pandas Badge](https://img.shields.io/badge/pandas-150458?logo=pandas&logoColor=fff&style=flat)
 ![Plotly Badge](https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=fff&style=flat)
-![TensorFlow Badge](https://img.shields.io/badge/TensorFlow-FF6F00?logo=tensorflow&logoColor=fff&style=flat)
 ![scikit-learn Badge](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=fff&style=flat)
-![Django Badge](https://img.shields.io/badge/Django-092E20?logo=django&logoColor=fff&style=flat)
-![FastAPI Badge](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=fff&style=flat)
 ![SQLAlchemy Badge](https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=fff&style=flat)
-![PostgreSQL Badge](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=fff&style=flat)
-![SQLite Badge](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=fff&style=flat)
-![Linux Badge](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=000&style=flat)
-![GNU Bash Badge](https://img.shields.io/badge/GNU%20Bash-4EAA25?logo=gnubash&logoColor=fff&style=flat)
-![Git Badge](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=fff&style=flat)
-![GitHub Badge](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff&style=flat)
-![GitLab Badge](https://img.shields.io/badge/GitLab-FC6D26?logo=gitlab&logoColor=fff&style=flat)
-![Amazon Web Services Badge](https://img.shields.io/badge/Amazon%20Web%20Services-232F3E?logo=amazonwebservices&logoColor=fff&style=flat)
-![HTML5 Badge](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=fff&style=flat)
-![CSS3 Badge](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=fff&style=flat)
-![JavaScript Badge](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000&style=flat)
-![Bootstrap Badge](https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=fff&style=flat)
+![Neo4J](https://img.shields.io/badge/Neo4j-018bff?style=for-the-badge&logo=neo4j&logoColor=fff&style=flat)
+![Keras](https://img.shields.io/badge/Keras-FF0000?style=for-the-badge&logo=keras&logoColor=fff&style=flat)
 
 #
 
@@ -51,20 +67,17 @@ Experienced data scientist with an internal audit, FP&A, and risk management bac
  <br/>
 
 #
-
-### 📊 Stats
-
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=mohdbakr&theme=gruvbox)](https://git.io/streak-stats)
-
-![Bakr's GitHub stats](https://github-readme-stats.vercel.app/api?username=mohdbakr&show_icons=true&theme=gruvbox)
-
-![Bakr's GitHub Top Languages](https://github-readme-stats.vercel.app/api/top-langs?username=mohdbakr&show_icons=true&theme=gruvbox)
+<details>
+ <summary> 📊 Stats</summary>
+ 
+ <img width=390 src="https://github-readme-streak-stats.herokuapp.com?user=mohdbakr&theme=solarized-dark&border_radius=10" alt="streak stats" />
+ <img width=390 src="https://github-readme-stats.vercel.app/api?username=mohdbakr&show_icons=true&theme=solarized-dark&border_radius=10" alt="Bakr's GitHub stats" />
+ 
+ <img width=325 src="https://github-readme-stats.vercel.app/api/top-langs?username=mohdbakr&hide=HTML&langs_count=8&layout=compact&theme=solarized-dark&border_radius=10&size_weight=0.5&count_weight=0.5&exclude_repo=github-readme-stats" alt="Bakr's GitHub Top Languages"/>
+</details>
+ 
 
  
- ### ***Follow me on:*** 
- 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohdbakr/)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bakr-ucb)
 
 [website]: https://portfolio.mohdbakr.com
 
