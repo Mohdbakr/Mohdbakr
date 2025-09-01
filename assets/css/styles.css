@@ -2,13 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 /* variables */
-:root{
+:root {
   /* Colors */
-  --c-light: #FBF9F9; /* Light shades */
-  --c-light-rgb: 251, 249, 249; /* Light shades */
-  --c-accent: #687570; /* Light accent */
-  --c-accent-rgb:	104, 117, 112;
-  --c-main: #9BA8A0; /* main brand color */
+  --c-light: #FBF9F9;
+  /* Light shades */
+  --c-light-rgb: 251, 249, 249;
+  /* Light shades */
+  --c-accent: #687570;
+  /* Light accent */
+  --c-accent-rgb: 104, 117, 112;
+  --c-main: #9BA8A0;
+  /* main brand color */
   --c-main-rgb: 155, 168, 160;
   --c-d-accent: #708188;
   --c-d-accent-rgb: 112, 129, 136;
@@ -34,7 +38,8 @@ html[data-bs-theme='dark'] {
   --background-color: var(--c-dark);
   --text-color: var(--c-light);
   --link-color: var(--c-accent);
-  --c-brand: var(--c-main); /* main brand color */
+  --c-brand: var(--c-main);
+  /* main brand color */
   --c-brand-rgb: var(--c-main-rgb);
   --c-scroll: var(--c-light);
   --c-scroll-thumb: var(--c-d-accent);
@@ -54,7 +59,18 @@ body {
   line-height: 1.7;
 }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h5, h5, .h5, h6, .h6{
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h5,
+h5,
+.h5,
+h6,
+.h6 {
   font-weight: 700;
   color: var(--c-d-accent);
 }
@@ -73,6 +89,8 @@ a:hover {
   color: var(--c-brand);
 }
 
+
+
 .section-padding {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -88,6 +106,7 @@ a:hover {
   padding-top: 30px;
   padding-bottom: 30px;
   transition: var(--transition);
+  background-color: transparent;
 }
 
 .navbar.scrolled {
@@ -98,15 +117,16 @@ a:hover {
 
 .navbar.scrolled .navbar-nav .nav-link,
 .navbar.scrolled .navbar-brand {
-  color: white; 
+  color: white;
 }
+
 .navbar .navbar-nav .nav-link {
   font-weight: 500;
   color: var(--text-color);
 }
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active{
+.navbar .navbar-nav .nav-link.active {
   color: var(--c-brand);
 }
 
@@ -120,7 +140,7 @@ a:hover {
 .navbar-brand:hover {
   color: var(--c-brand);
   text-shadow: 0 0 25px var(--c-brand),
-               0 0 50px var(--c-brand);
+    0 0 50px var(--c-brand);
   transform: scale(1.1);
 }
 
@@ -137,9 +157,31 @@ a:hover {
 }
 
 /* Hero */
+.hero-section {
+  background-image: url('../imgs/mohamed-bakr-profile-image1.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33.33%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 1;
+}
+
+.hero-section>* {
+  position: relative;
+  z-index: 2;
+}
 
 /* About */
-.about-pic{
+.about-pic {
   border-radius: 2rem;
   padding: 10px;
 }
@@ -192,7 +234,7 @@ footer li a {
   padding-bottom: 10px;
 }
 
-footer h4{
+footer h4 {
   color: var(--c-accent);
 }
 
